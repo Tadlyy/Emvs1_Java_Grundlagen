@@ -75,6 +75,13 @@ public class Main {
         //      Ask the user again to input its driving speed.
         //      Print "You drove too fast!" if the "drivingSpeed" exceeds the "speedLimit."
         //      If the "drivingSpeed" is within the limit, print "You are all good!"
+        System.out.println("Enter your driving speed again:");
+        drivingSpeed = userInputScanner.nextInt();
+        if (drivingSpeed > speedLimit) {
+            System.out.println("You drove too fast!");
+        } else {
+            System.out.println("You are all good!");
+        }
 
         //--------------------------------------------------------------------------------------------------------------
         System.out.println("Exercise 5");
