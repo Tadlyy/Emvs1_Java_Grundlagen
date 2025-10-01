@@ -125,6 +125,19 @@ public class Main {
         //      If the user is younger than 20, then print out "You are still young".
         //      And if the user also has an IQ higher than 120, then print out this:
         //      " ...and also very smart!"
+        System.out.println("Enter your age:");
+        age = userInputScanner.nextInt();
+        System.out.println("Enter your IQ:");
+        int iq = userInputScanner.nextInt();
+        if (age < 20) {
+            System.out.print("You are still young");
+            if (iq > 120) {
+                System.out.print(" ...and also very smart!");
+            }
+            System.out.println();
+        } else {
+            System.out.println("You are not younger than 20.");
+        }
 
         //--------------------------------------------------------------------------------------------------------------
         System.out.println("Exercise 8");
