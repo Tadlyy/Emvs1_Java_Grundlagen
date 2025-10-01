@@ -109,6 +109,15 @@ public class Main {
 
         //      However, if the user is older than 21, then tell him that he is allowed to consume alcohol
         //      everywhere.
+        System.out.println("Enter your age for the detailed alcohol check:");
+        age = userInputScanner.nextInt();
+        if (age < 18) {
+            System.out.println("You are not legally allowed to consume alcohol in most parts of the world.");
+        } else if (age < 21) {
+            System.out.println("You are legally allowed to consume alcohol in most parts of the world, except the United States.");
+        } else {
+            System.out.println("You are allowed to consume alcohol everywhere.");
+        }
 
         //--------------------------------------------------------------------------------------------------------------
         System.out.println("Exercise 7");
