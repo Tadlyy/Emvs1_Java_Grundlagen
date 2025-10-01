@@ -89,7 +89,13 @@ public class Main {
         //      If he is older than 21, then let the user know that he is legally allowed to consume alcohol.
         //      If not, then tell the user that it is not legally allowed
         //      to consume alcohol everywhere in the world.
-
+        System.out.println("How old are you?");
+        int age = userInputScanner.nextInt();
+        if (age > 21) {
+            System.out.println("You are legally allowed to consume alcohol.");
+        } else {
+            System.out.println("You are not legally allowed to consume alcohol");
+        }
         //--------------------------------------------------------------------------------------------------------------
         System.out.println("Exercise 6");
         // 06.  Now do the same as in exercise 5, but instead of only checking if the user is only 21,
