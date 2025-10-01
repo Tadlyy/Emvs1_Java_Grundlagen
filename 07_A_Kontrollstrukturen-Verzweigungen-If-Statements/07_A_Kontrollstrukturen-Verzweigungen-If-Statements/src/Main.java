@@ -41,8 +41,10 @@ public class Main {
         // 02.  Create a Scanner object named "userInputScanner". (Don't forget to import the scanner)
         byte speedLimit = 120;
         int drivingSpeed;
-        Scanner userInput = new Scanner(System.in);
+        Scanner userInputScanner = new Scanner(System.in);
         System.out.println("How fast do you drive?");
+        drivingSpeed = userInputScanner.nextInt();
+
         // Get the user input with the scanner and safe it in the variable drivingSpeed
 
         // Check if the drivingSpeed is greater than the value of the variable "speedlimit".
