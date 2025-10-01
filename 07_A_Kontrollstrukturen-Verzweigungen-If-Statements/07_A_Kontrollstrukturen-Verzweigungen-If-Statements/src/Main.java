@@ -166,6 +166,17 @@ public class Main {
         //      Give the second number:
         //      3
         //      The numbers are equal!
+        System.out.println("Give the first number:");
+        int first = userInputScanner.nextInt();
+        System.out.println("Give the second number:");
+        int second = userInputScanner.nextInt();
+        if (first > second) {
+            System.out.println("Greater number is: " + first);
+        } else if (second > first) {
+            System.out.println("Greater number is: " + second);
+        } else {
+            System.out.println("The numbers are equal!");
+        }
 
 
         //--------------------------------------------------------------------------------------------------------------
@@ -179,6 +190,23 @@ public class Main {
         //      81-90     very good
         //      91-100    awesome!
         //      > 100     impossible
+        System.out.println("Enter the course grade (0-100):");
+        int grade = userInputScanner.nextInt();
+        if (grade < 0 || grade > 100) {
+            System.out.println("impossible");
+        } else if (grade <= 30) {
+            System.out.println("failed");
+        } else if (grade <= 50) {
+            System.out.println("poor");
+        } else if (grade <= 60) {
+            System.out.println("ok");
+        } else if (grade <= 80) {
+            System.out.println("good");
+        } else if (grade <= 90) {
+            System.out.println("very good");
+        } else { // 91-100
+            System.out.println("awesome!");
+        }
 
         //--------------------------------------------------------------------------------------------------------------
         System.out.println("Exercise 10");
