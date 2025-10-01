@@ -29,19 +29,29 @@ public class Main {
         // Implement the other one, which you haven't implemented above, here as well:
 
         // Your solution here:
-
+        boolean isBigger = bigNumber > smallNumber;
+        if (isBigger) {
+            System.out.println(bigNumber + " is greater than " + smallNumber + "!");
+        } else {
+            System.out.println(bigNumber + " is not greater than " + smallNumber + "!");
+        }
 
         //--------------------------------------------------------------------------------------------------------------
         System.out.println("Exercise 2");
         // 02.  Create a Scanner object named "userInputScanner". (Don't forget to import the scanner)
         byte speedLimit = 120;
         int drivingSpeed;
-        Scanner userInput = new Scanner(System.in)
+        Scanner userInput = new Scanner(System.in);
         System.out.println("How fast do you drive?");
         // Get the user input with the scanner and safe it in the variable drivingSpeed
 
         // Check if the drivingSpeed is greater than the value of the variable "speedlimit".
         // If so, print "You drove too fast!"
+        if (drivingSpeed > speedLimit) {
+            System.out.println("You drove too fast!");
+        } else {
+            System.out.println("Your speed is within the limit.");
+        }
 
         //--------------------------------------------------------------------------------------------------------------
         System.out.println("Exercise 3");
