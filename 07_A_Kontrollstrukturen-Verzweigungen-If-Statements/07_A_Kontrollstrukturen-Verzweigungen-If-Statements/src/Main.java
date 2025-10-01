@@ -60,6 +60,13 @@ public class Main {
         // 03.  Write a program that prompts the user for a year.
         //      If the user input is smaller than 2000, then the program prints
         //      the string "Ancient history!"
+        System.out.println("Enter a year:");
+        int year = userInputScanner.nextInt();
+        if (year < 2000) {
+            System.out.println("Ancient history!");
+        } else {
+            System.out.println("Not ancient.");
+        }
 
         //--------------------------------------------------------------------------------------------------------------
         System.out.println("Exercise 4");
