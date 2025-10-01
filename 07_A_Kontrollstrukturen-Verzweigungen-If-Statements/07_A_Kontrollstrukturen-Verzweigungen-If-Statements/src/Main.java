@@ -21,6 +21,7 @@ public class Main {
         }
 
 
+
         // There are multiple ways to solve this problem.
         // One option would be to make the comparison directly in the if-statement.
         // Another option would be to make a variable, store the result in there and then check that variable in the
