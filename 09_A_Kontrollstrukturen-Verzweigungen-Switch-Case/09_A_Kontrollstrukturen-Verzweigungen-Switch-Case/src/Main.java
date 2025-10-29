@@ -122,7 +122,40 @@ public class Main {
         // 03. Solve this exercise with the help of both, the old switch-statement and the new switch expression.
         //     Create a program that takes a month number (1-12) and prints the number of days in that month.
         //     Assume it's not a leap year.
-        
+        System.out.print("Enter month number (1-12): ");
+        int monthNum = -1;
+        if (scanner.hasNextInt()) {
+            monthNum = scanner.nextInt();
+        } else {
+            scanner.next();
+        }
+
+        // Old switch
+        System.out.print("Old: ");
+        switch (monthNum) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                System.out.println("31 days");
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                System.out.println("30 days");
+                break;
+            case 2:
+                System.out.println("28 days");
+                break;
+            default:
+                System.out.println("Invalid month number");
+                break;
+        }
+
 
         //--------------------------------------------------------------------------------------------------------------
         System.out.println("Exercise 04");
