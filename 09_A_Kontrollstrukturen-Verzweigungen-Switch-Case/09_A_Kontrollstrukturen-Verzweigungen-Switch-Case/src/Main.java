@@ -176,6 +176,22 @@ public class Main {
         //      Example: "Select a class (1-Warrior, 2-Mage, 3-Rogue, 4-Cleric): "
         //      User Input: 2
         //      Output: "Mage (Strength: 3, Agility: 4, Intelligence: 9)"
+        System.out.print("Select a class (1-Warrior, 2-Mage, 3-Rogue, 4-Cleric): ");
+        int classChoice = -1;
+        if (scanner.hasNextInt()) {
+            classChoice = scanner.nextInt();
+        } else {
+            scanner.next();
+        }
+        
+        String character = switch (classChoice) {
+            case 1 -> "Warrior (Strength: 9, Agility: 5, Intelligence: 2)";
+            case 2 -> "Mage (Strength: 3, Agility: 4, Intelligence: 9)";
+            case 3 -> "Rogue (Strength: 5, Agility: 9, Intelligence: 3)";
+            case 4 -> "Cleric (Strength: 4, Agility: 3, Intelligence: 8)";
+            default -> "Unknown class";
+        };
+        System.out.println(character);
 
 
         //--------------------------------------------------------------------------------------------------------------
