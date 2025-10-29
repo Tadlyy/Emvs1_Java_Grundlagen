@@ -134,11 +134,9 @@ public class Main {
             if (iq > 120) {
                 System.out.print(" ...and also very smart!");
             }
-            System.out.println();
-        } else {
-            System.out.println("You are not younger than 20.");
-        }
+            System.out.println(
 
+            );
         //--------------------------------------------------------------------------------------------------------------
         System.out.println("Exercise 8");
         // 08.  Write a program that prompts the user for two integers and prints the larger of the two.
@@ -234,4 +232,6 @@ public class Main {
         //      Create two solutions for this task: one that uses the "==" operator and another that uses the "!=" operator.
     }
 }
+}
+
 
