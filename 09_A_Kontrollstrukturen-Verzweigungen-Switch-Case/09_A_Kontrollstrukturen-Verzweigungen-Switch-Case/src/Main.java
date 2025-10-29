@@ -155,6 +155,17 @@ public class Main {
                 System.out.println("Invalid month number");
                 break;
         }
+        // New switch
+        System.out.print("New: ");
+        String days = switch (monthNum) {
+            case 1, 3, 5, 7, 8, 10, 12 -> "31 days";
+            case 4, 6, 9, 11 -> "30 days";
+            case 2 -> "28 days";
+            default -> "Invalid month number";
+        };
+        System.out.println(days);
+
+
 
 
         //--------------------------------------------------------------------------------------------------------------
