@@ -275,16 +275,30 @@ public class Main {
         case 2 -> "Resultat:" + (numberOne - numberTwo);
         case 3 -> {
             if (numberTwo == 0) {
-                yield "Error";
-            }else{
+                yield "Error";}   else {
                     yield "resultat:"+ (numberOne / numberTwo);
-                }
             }
+        }
         case 4 -> "Resultat:"+ (numberOne * numberTwo);
         default -> "Unknown operator";
         };
         System.out.println(result);
-
+        
+        /*int result = switch (mathChoose){
+            case 1 ->   (numberOne + numberTwo);
+            case 2 ->   (numberOne - numberTwo);
+            case 3 -> {
+                if (numberTwo == 0) {
+                    yield "Error";}   else {
+                    yield  (numberOne / numberTwo);
+                }
+            }
+            case 4 ->  (numberOne * numberTwo);
+            default -> "Unknown operator";
+        };
+        System.out.println(result);
+        */
+       //Bei der aufgabe über mir hab ich int ausprobiert
 
 
 
