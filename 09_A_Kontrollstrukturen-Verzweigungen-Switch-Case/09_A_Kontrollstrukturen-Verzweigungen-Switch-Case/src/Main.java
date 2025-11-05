@@ -283,7 +283,7 @@ public class Main {
         default -> "Unknown operator";
         };
         System.out.println(result);
-        
+
         /*int result = switch (mathChoose){
             case 1 ->   (numberOne + numberTwo);
             case 2 ->   (numberOne - numberTwo);
