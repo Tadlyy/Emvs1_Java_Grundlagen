@@ -261,6 +261,34 @@ public class Main {
         //      Calculate the correct answer and print it out.
         //      Print a warning when the user tries to divide by 0 (Example: 2/0 -> number two must not be 0!
 
+        System.out.println("Choose: 1=addition 2=subtraction 3=division 4=multiplication");
+        int mathChoose = userInput.nextInt();
+
+        System.out.println("choose number one");
+        int numberOne = userInput.nextInt();
+
+        System.out.println("Choose number two");
+        int numberTwo = userInput.nextInt();
+
+        String result = switch (mathChoose){
+        case 1 -> "Resultat:" + (numberOne + numberTwo);
+        case 2 -> "Resultat:" + (numberOne - numberTwo);
+        case 3 -> {
+            if (numberTwo == 0) {
+                yield "Error";
+            }else{
+                    yield "resultat:"+ (numberOne / numberTwo);
+                }
+            }
+        case 4 -> "Resultat:"+ (numberOne * numberTwo);
+        default -> "Unknown operator";
+        };
+        System.out.println(result);
+
+
+
+
+
 
         //--------------------------------------------------------------------------------------------------------------
         System.out.println("Optional exercises");
@@ -268,3 +296,4 @@ public class Main {
         //    know so far. Try to implement user input.
     }
 }
+
