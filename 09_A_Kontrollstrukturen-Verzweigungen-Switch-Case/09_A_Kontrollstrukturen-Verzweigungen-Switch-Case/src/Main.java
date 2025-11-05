@@ -9,15 +9,11 @@ public class Main {
         //     Ask a user for a number between 1 and 7.
         //     If the number is a 1, then print out Monday.  2 = Tuesday, 3 = Wednesday and so on until 7 = Sunday.
         //     Print "Not a weekday!" if it's not a number between 1-7.
-        Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Enter a number between 1 and 7: ");
-        int dayNum = -1;
-        if (scanner.hasNextInt()) {
-            dayNum = scanner.nextInt();
-        } else {
-            scanner.next();
-        }
+        Scanner userInput = new Scanner(System.in);
+
+        System.out.println("Write a number between 1-7 ");
+        byte dayNum = userInput.nextByte();
 
         System.out.print("Old: ");
         switch (dayNum) {
@@ -71,13 +67,9 @@ public class Main {
         //     Example:  "January" -> "Winter"
         //     Example: "EMVs" -> "Not a month!";
         //     Write the old switch-statement so, that it only contains 4 breaks.
-        System.out.print("Enter a month (e.g. January): ");
-        String month = "";
-        if (scanner.hasNext()) {
-            month = scanner.next();
-        }
 
-        String monthNorm = month.trim().toLowerCase();
+        System.out.println("Write a month ");
+        String monthNorm = userInput.nextLine();
 
         System.out.print("Old: ");
         switch (monthNorm) {
@@ -122,16 +114,10 @@ public class Main {
         // 03. Solve this exercise with the help of both, the old switch-statement and the new switch expression.
         //     Create a program that takes a month number (1-12) and prints the number of days in that month.
         //     Assume it's not a leap year.
-        System.out.print("Enter month number (1-12): ");
-        int monthNum = -1;
-        if (scanner.hasNextInt()) {
-            monthNum = scanner.nextInt();
-        } else {
-            scanner.next();
-        }
 
-        // Old switch
         System.out.print("Old: ");
+        byte monthNum = userInput.nextByte();
+
         switch (monthNum) {
             case 1:
             case 3:
@@ -155,7 +141,6 @@ public class Main {
                 System.out.println("Invalid month number");
                 break;
         }
-        // New switch
         System.out.print("New: ");
         String days = switch (monthNum) {
             case 1, 3, 5, 7, 8, 10, 12 -> "31 days";
@@ -176,14 +161,10 @@ public class Main {
         //      Example: "Select a class (1-Warrior, 2-Mage, 3-Rogue, 4-Cleric): "
         //      User Input: 2
         //      Output: "Mage (Strength: 3, Agility: 4, Intelligence: 9)"
-        System.out.print("Select a class (1-Warrior, 2-Mage, 3-Rogue, 4-Cleric): ");
-        int classChoice = -1;
-        if (scanner.hasNextInt()) {
-            classChoice = scanner.nextInt();
-        } else {
-            scanner.next();
-        }
-        
+
+        System.out.println("Pick a class: 1=Warrior 2=Mage 3=Rogue 4=Cleric");
+        byte classChoice = userInput.nextByte();
+
         String character = switch (classChoice) {
             case 1 -> "Warrior (Strength: 9, Agility: 5, Intelligence: 2)";
             case 2 -> "Mage (Strength: 3, Agility: 4, Intelligence: 9)";
@@ -218,6 +199,59 @@ public class Main {
         //      8: hachi
         //      9: kyuu
         //      default: Mukō na sūchi
+
+        System.out.println("Which digit do you want to translate?");
+        byte digitTrans = userInput.nextByte();
+
+        System.out.println("Wich langauge?: 1=German 2=English 3=japanese");
+        byte languageChoise = userInput.nextByte();
+
+        String number = switch (languageChoise){
+            case 1 -> switch(digitTrans){
+                case 0 -> "Null";
+                case 1 -> "Eins";
+                case 2 -> "Zwei";
+                case 3 -> "Drei";
+                case 4 -> "Vier";
+                case 5 -> "Fünf";
+                case 6 -> "Sechs";
+                case 7 -> "Sieben";
+                case 8 -> "Acht";
+                case 9 -> "Neun";
+                default -> "Ungültige Zahl";
+            };
+            case 2 -> switch(digitTrans){
+                case 0 -> "Zero";
+                case 1 -> "One";
+                case 2 -> "Two";
+                case 3 -> "Three";
+                case 4 -> "Four";
+                case 5 -> "Five";
+                case 6 -> "Six";
+                case 7 -> "Seven";
+                case 8 -> "Eight";
+                case 9 -> "Nine";
+                default -> "Invalid number";
+            };
+            case 3 -> switch(digitTrans){
+                case 0 -> "Zero";
+                case 1 -> "ichi";
+                case 2 -> "ni";
+                case 3 -> "san";
+                case 4 -> "shi";
+                case 5 -> "go";
+                case 6 -> "roku";
+                case 7 -> "nana";
+                case 8 -> "hachi";
+                case 9 -> "kyuu";
+                default -> "Mukō na sūchi";
+            };
+            default -> "Unknown language";
+        };
+        System.out.println(number);
+
+
+
 
 
         //--------------------------------------------------------------------------------------------------------------
