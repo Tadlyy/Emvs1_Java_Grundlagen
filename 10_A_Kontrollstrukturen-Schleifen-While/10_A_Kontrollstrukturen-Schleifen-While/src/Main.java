@@ -185,7 +185,10 @@ public class Main {
         // 3. Stops when 22 is generated
 
         // Your code here
-
-        System.out.println("The program ran " + iterationSteps + " times until the number was found!");
+        while (randomNumber != 22){
+            randomNumber = randomGenerator.nextInt(101);
+            iterationSteps++;
+        }
+        System.out.println("Versuche"+iterationSteps);
     }
 }
