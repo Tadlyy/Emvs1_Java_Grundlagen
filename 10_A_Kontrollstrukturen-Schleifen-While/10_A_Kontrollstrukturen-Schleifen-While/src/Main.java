@@ -121,9 +121,14 @@ public class Main {
         int whileSum_03 = 0;
 
         // Your code here
+        int num = 0;
 
+        while (num <= 100){
+            whileSum_03 += num;
+            System.out.println("Value of number" + whileSum_03);
+            num++;
+        }
         System.out.println(whileSum_03); // Should be 5050
-
         //--------------------------------------------------------------------------------------------------------------
         System.out.println("Exercise 04");
         // 04.  Calculate the sum of all even numbers from 0-100 (both inclusive). Print it to the console.
