@@ -136,7 +136,14 @@ public class Main {
         int whileSum_04 = 0;
 
         // Your code here
+        int num2 = 0;
 
+        while (num2 <= 100){
+            whileSum_04 += num2;
+            System.out.println("Value of number" + whileSum_04);
+            num2++;
+            num2++;
+        }
         System.out.println(whileSum_04); // Should be 2550
 
         //--------------------------------------------------------------------------------------------------------------
