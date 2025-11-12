@@ -23,6 +23,8 @@ public class Main {
         //      2. Why does this behavior occur?
         //      3. How can you modify the code to achieve the desired output:
         //         i:0 i:1 i:2 i:3 i:4 i:5 i:6 i:7 i:8 i:9
+        //      It would repeat the same code nonstop because the iteratorEx1 nuber doesnt change and it cant break the code
+        //      You can get this output by doping an iteratorEx1++ at the end so every repeat the number goes up by one.
 
 
         //--------------------------------------------------------------------------------------------------------------
