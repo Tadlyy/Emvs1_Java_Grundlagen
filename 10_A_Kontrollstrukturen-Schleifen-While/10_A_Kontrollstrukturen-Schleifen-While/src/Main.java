@@ -23,6 +23,7 @@ public class Main {
         //      2. Why does this behavior occur?
         //      3. How can you modify the code to achieve the desired output:
         //         i:0 i:1 i:2 i:3 i:4 i:5 i:6 i:7 i:8 i:9
+
         //      It would repeat the same code nonstop because the iteratorEx1 nuber doesnt change and it cant break the code
         //      You can get this output by doping an iteratorEx1++ at the end so every repeat the number goes up by one.
 
@@ -41,7 +42,78 @@ public class Main {
         //      02-09. Even numbers from 10 to -10 (descending)
         //      02-10. Odd numbers from 10 to -10 (descending)
 
+        System.out.println("02-01");
+        int i = 0;
+        while (i <= 100){
+            System.out.println("Value of Number" + i);
+            i++;
+        }
+        System.out.println("02-02");
+        int i2 = 42;
+        while (i2 <= 100){
+            System.out.println("Value of Number" + i2);
+            i2++;
+        }
 
+        System.out.println("02-03");
+        int i3 = 42;
+        while (i3 <= 123) {
+            System.out.println("Value of Number" + i3);
+            i3++;
+        }
+
+        System.out.println("02-04");
+        int i4 = 0;
+        while (i4 <= 10){
+            System.out.println("Value of Number" + i4);
+            i4++;
+            i4++;
+        }
+
+        System.out.println("02-05");
+        int i5 = 1;
+        while (i5 <= 10){
+            System.out.println("Value of Number" + i5);
+            i5++;
+            i5++;
+        }
+
+        System.out.println("02-06");
+        int i6 = -10;
+        while (i6 <= 10){
+            System.out.println("Value of Number" + i6);
+            i6++;
+        }
+
+        System.out.println("02-07");
+        int i7 = 35;
+        while (i7 >= 0){
+            System.out.println("Value of Number" + i7);
+            i7--;
+        }
+
+        System.out.println("02-08");
+        int i8 = 10;
+        while (i8 >= -20){
+            System.out.println("Value of Number" + i8);
+            i8--;
+        }
+
+        System.out.println("02-09");
+        int i9 = 10;
+        while (i9 >= -10){
+            System.out.println("Value of Number" + i9);
+            i9--;
+            i9--;
+        }
+
+        System.out.println("02-10");
+        int i10 = 9;
+        while (i10 >= -10){
+            System.out.println("Value of Number" + i10);
+            i10--;
+            i10--;
+        }
         //--------------------------------------------------------------------------------------------------------------
         System.out.println("Exercise 03");
         // 03.  Calculate the sum of all numbers from 0-100 (both inclusive). Print it to the console.
