@@ -60,6 +60,29 @@ public class Main {
         //      0
         //      You provided 4 numbers. The sum of those numbers are : 12
 
+        Scanner numberScanner = new Scanner(System.in);
+
+        int numbersToRead = 20;
+        int numbersRead = 0;
+        int sum = 0;
+
+        while (true) {
+            int remaining = numbersToRead - numbersRead;
+            System.out.println("Please input an integer. (0 to exit, " + remaining + " numbers remaining)");
+            int userNumber = numberScanner.nextInt();
+            if (userNumber == 0) {
+                break;
+            }
+            sum += userNumber;
+            numbersRead++;
+
+            if (numbersRead == numbersToRead) {
+                break;
+            }
+        }
+
+        System.out.println("You provided " + numbersRead + " numbers. The sum of those numbers is: " + sum);
+        numberScanner.close();
 
         //--------------------------------------------------------------------------------------------------------------
         System.out.println("Exercise 02");
