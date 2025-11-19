@@ -39,9 +39,27 @@ public class Main {
         //      Example: n = 7 -> "It's a prime number!"
         //      Example: n = 10 -> "It's not a prime number!"
 
-        int n = 7; // change this value from prime to not prime to test
+        int n = 1; // change this value from prime to not prime to test
+
         // Your code here
 
+        if (n <= 1) {
+            System.out.println("It's not a prime number!");
+
+        } else {
+
+            boolean isPrime = true;
+            int i = 2;
+            while (i * i <= n) {
+                if (n % i == 0) {
+                    isPrime = false;
+                    break;
+                }
+                i++;
+            }
+            if (isPrime) System.out.println("It's a prime number!");
+            else System.out.println("It's not a prime number!");
+        }
 
         //--------------------------------------------------------------------------------------------------------------
         System.out.println("Exercise 04");  // Challenge+!
