@@ -143,6 +143,9 @@ public class Main {
         int forSum_05 = 0;
 
         // Your code here
+        for (int numm3 = 1; numm3 <= 100; numm3 += 2) {
+            forSum_05 += numm3;
+        }
 
         System.out.println(forSum_05); // Should be 2500
 
