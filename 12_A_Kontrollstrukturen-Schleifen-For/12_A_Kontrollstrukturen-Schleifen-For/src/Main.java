@@ -118,9 +118,10 @@ public class Main {
         // 03.  Calculate the sum of all numbers from 0-100 (both inclusive). Print it to the console.
 
         int forSum_03 = 0;
-
         // Your code here
-
+        for (int numm = 0; numm <= 100; numm++) {
+            forSum_03 += numm;
+        }
         System.out.println(forSum_03); // Should be 5050
 
         //--------------------------------------------------------------------------------------------------------------
@@ -130,7 +131,9 @@ public class Main {
         int forSum_04 = 0;
 
         // Your code here
-
+        for (int numm2 = 0; numm2 <= 100; numm2 += 2) {
+            forSum_04 += numm2;
+        }
         System.out.println(forSum_04); // Should be 2550
 
         //--------------------------------------------------------------------------------------------------------------
