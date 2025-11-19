@@ -16,6 +16,7 @@ public class Main {
         //
         //      Hint2: Check if your implementation is correct. For example; the Year 1900 is not a leap year.
 
+
         //--------------------------------------------------------------------------------------------------------------
         System.out.println("Exercise 02");
         // 02.  Print out all numbers from 1-10.
@@ -23,7 +24,15 @@ public class Main {
         //      If a number is divisible by five, then print "Buzz".
         //      If a number is divisible by three and five, print "FizzBuzz".
 
+        int currentYear = java.time.Year.now().getValue();
 
+
+        for (int year = 0; year <= currentYear; year += 4) {
+
+            if (year % 100 != 0 || year % 400 == 0) {
+                System.out.println(year);
+            }
+        }
         //--------------------------------------------------------------------------------------------------------------
         System.out.println("Exercise 03");  // Challenge!
         // 03.  Given a number n (n > 2 && n < 100), write a program which tells if n is a prime.
