@@ -64,5 +64,20 @@ public class Main {
         //--------------------------------------------------------------------------------------------------------------
         System.out.println("Exercise 04");  // Challenge+!
         // 04. Print all prime numbers from 2-100.
+        while (n <= 100) {
+            boolean isPrime = true;
+            int d = 2;
+            while (d * d <= n) {
+                if (n % d == 0) {
+                    isPrime = false;
+                    break;
+                }
+                d++;
+            }
+            if (isPrime) {
+                System.out.println(n);
+            }
+            n++;
+        }
     }
 }
