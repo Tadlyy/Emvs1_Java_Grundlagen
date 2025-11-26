@@ -82,7 +82,6 @@ public class Main {
         }
 
         System.out.println("You provided " + numbersRead + " numbers. The sum of those numbers is: " + sum);
-        
 
         //--------------------------------------------------------------------------------------------------------------
         System.out.println("Exercise 02");
@@ -154,10 +153,6 @@ public class Main {
         }
 
         System.out.println("You have exited the program (Exercise 02).");
-
-
-
-
 
 
 
