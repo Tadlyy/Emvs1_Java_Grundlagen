@@ -82,7 +82,7 @@ public class Main {
         }
 
         System.out.println("You provided " + numbersRead + " numbers. The sum of those numbers is: " + sum);
-        numberScanner.close();
+        
 
         //--------------------------------------------------------------------------------------------------------------
         System.out.println("Exercise 02");
@@ -115,6 +115,52 @@ public class Main {
         // What is currently making your life difficult or what do you like to do (type "exit" to quit)?
         // exit
         // You have exited the program (Exercise 02)
+
+        Scanner scannerMoney = new Scanner(System.in);
+
+        while (true) {
+            System.out.println("What is currently making your life difficult or what do you like to do (type \"exit\" to quit)?");
+            String i = scannerMoney.nextLine().trim();
+
+            if (i.equalsIgnoreCase("exit")) {
+                break;
+            }
+
+
+            if (i.equalsIgnoreCase("money")) {
+                System.out.println("Money can be good or bad!");
+            } else if (i.equalsIgnoreCase("traveling")) {
+                System.out.println("Traveling. Uff, that's a tough one!");
+            } else if (i.equalsIgnoreCase("work")) {
+                System.out.println("Work can be stressful, but also rewarding.");
+            } else if (i.equalsIgnoreCase("school")) {
+                System.out.println("School is tough, but knowledge is power!");
+            } else if (i.equalsIgnoreCase("family")) {
+                System.out.println("Family can be both your biggest challenge and your greatest support.");
+            } else if (i.equalsIgnoreCase("friends")) {
+                System.out.println("Friends make life brighter, but sometimes complicated too.");
+            } else if (i.equalsIgnoreCase("health")) {
+                System.out.println("Health is wealth. Take care of yourself!");
+            } else if (i.equalsIgnoreCase("love")) {
+                System.out.println("Love can be wonderful, but also confusing.");
+            } else if (i.equalsIgnoreCase("sports")) {
+                System.out.println("Sports keep you fit and motivated!");
+            } else if (i.equalsIgnoreCase("music")) {
+                System.out.println("Music heals the soul.");
+            } else {
+
+                System.out.println("Interesting! Thanks for sharing: " + i);
+            }
+        }
+
+        System.out.println("You have exited the program (Exercise 02).");
+
+
+
+
+
+
+
 
 
 
