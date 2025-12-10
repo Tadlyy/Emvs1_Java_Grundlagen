@@ -9,6 +9,8 @@ public class Main {
         System.out.println("Shoot? (True or false)");
         Fortnite pumpShot = new Fortnite(scanner.nextBoolean());
 
+
+
         pumpShot.pumpShotDamage();
 
 
