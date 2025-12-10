@@ -20,8 +20,8 @@ public class Fortnite {
     }
 
     public void pumpShotDamage(){
-        while (health >= 0){
-            if (pumpShot == true){
+        while (health > 0){
+            if (pumpShot == true && this.shield > 0){
                 this.shield -=50;
                 System.out.println(shield + "shield");
                 System.out.println(health + "health");
