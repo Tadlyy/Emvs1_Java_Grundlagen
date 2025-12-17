@@ -1,5 +1,8 @@
 public class Utils {
 
+    public final static int DIAMETER_SUN_KM = 696340;
+    public final static int DIAMETER_EARTH_KM = 12742;
+
     public static void print(String s) {
         System.out.println(s);
     }

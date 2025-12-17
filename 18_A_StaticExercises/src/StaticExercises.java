@@ -20,6 +20,9 @@ public class StaticExercises {
         Utils.print((byte) 32);
         Utils.print(-5000);
 
+        System.out.println(Utils.DIAMETER_EARTH_KM);
+        System.out.println(Utils.DIAMETER_SUN_KM);
+
 
 
 
