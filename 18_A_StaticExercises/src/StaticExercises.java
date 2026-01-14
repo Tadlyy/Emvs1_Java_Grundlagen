@@ -1,3 +1,4 @@
+
 public class StaticExercises {
 
     public int testInteger = 5;
